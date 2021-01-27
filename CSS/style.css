@@ -183,38 +183,20 @@ header .site-contact{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-/*.feature-item::before{
-    margin-bottom: 30px;
-    border-radius: 4px;
-    background-color: var(--bg-team-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    content:"";
-    display: block;
-    height: 120px;
-}
-.icon-antenna::before{
-    background-image: url(../features-img/antenna.svg);
-}
-.icon-clock::before{
-    background-image: url(../features-img/clock.svg);
-}
-.icon-diagram::before{
-    background-image: url(../features-img/diagram.svg);
-}
-.icon-astronaut::before{
-    background-image: url(../features-img/astronaut.svg);
-}
 
-
-.feature-item:nth-child(1)::before{
-    background-image: url(../features-img/antenna.svg);
-}
-.feature-item:nth-child(2)::before{
-    background-image: url(../features-img/clock.svg);
-}*/
 .features-list{
     display: flex;
+}
+/*==SVG Наши качества==*/
+.icon-division{
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 270px;
+    height: 120px;
 }
 .features-list .feature-item+.feature-item{
     margin-left: 30px;
@@ -250,6 +232,7 @@ header .site-contact{
     text-align: center;
 }
 .team{
+    margin-bottom: 94px;
     background-color: var(--bg-team-color);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -317,9 +300,49 @@ header .site-contact{
     fill: var(--white-text-bg-color);
 }
 
+/*==Наши клиенты==*/
+
+.list-clients{
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: center;
+}
+.section-subject{
+    margin-bottom: 50px;
+}
+.item-clients{
+    width: 170px;
+    height: 90px;
+}
+.item-clients:not(:last-child){
+    margin-right: 30px;
+}
+.link-clients{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    fill: #AFB1B8;
+}
+.link-clients:hover,
+.link-clients:focus{
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 
 /* footer */
 
+.footer-content{
+    display: flex;
+    align-items: baseline;
+}
+.studio-adress{
+    margin-right: 70px;
+}
 .footer{
     background-color: var(--bg-footer-color);
     padding-bottom: 60px;
@@ -340,14 +363,13 @@ header .site-contact{
 }
 .site-contact .down :hover,
 .site-contact .down :focus{
-    color: var(--footer-email-tel);
+    color: var(--accent-color);
 } 
-
 
 .site-contact .down{
     font-weight: 400;
     padding: 0; 
-    display: inline-block
+    display: inline-block;
 }
 
 .footer .logo{
@@ -357,9 +379,48 @@ header .site-contact{
     margin-top: 9px;
 }
 
+/*==Join==*/
+
+.join-title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+.list-join{
+    display: flex;
+    justify-content: center;
+}
+.item-join{
+    width: 44px;
+    height: 44px;
+}
+.item-join:not(:last-child){
+    margin-right: 10px;
+}
+.link-join:hover{
+    background-color: var(--accent-color);
+}
+.link-join{
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    border-radius: 50%;
+    fill: white;
+    width: 100%;
+    height: 100%;
+}
 
 
-/* ======Portfolio.html ======== */
+
+
+
+/*======Portfolio.html ========*/
 
 .header-portfolio{
     border-bottom: 1px solid #ECECEC;
