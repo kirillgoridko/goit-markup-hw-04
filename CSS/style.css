@@ -302,12 +302,16 @@ header .site-contact{
     justify-content: center;
     fill: #afb1b8;
 }
-.item-network:hover{
+.item-network:hover,
+.link-network:focus{
     background-color: var(--accent-color);
 }
-.link-network:hover .icon-network{
+.link-network:hover .icon-network,
+.link-network:focus .icon-network{
     fill: var(--white-text-bg-color);
 }
+
+
 
 /*==Наши клиенты==*/
 
